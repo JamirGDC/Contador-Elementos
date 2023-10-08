@@ -68,21 +68,40 @@ public class ContadorElementos<T> {
     }
 
     public static void main(String[] args) {
-        ContadorElementos<String> contador = new ContadorElementos<>();
+
+        ContadorElementos<Integer> camisetas = new ContadorElementos<>();
         try {
-            contador.count("a");
-            contador.count("b");
-            contador.count("a");
-            contador.count("c");
-            System.out.println(contador.toString());
+            camisetas.count(10);
+            camisetas.count(7);
+            camisetas.count(10);
+            camisetas.count(9);
+            System.out.println(camisetas);
 
-            contador.discount("a");
-            System.out.println(contador.toString());
+            camisetas.discount(10);
+            System.out.println(camisetas);
 
-            contador.delete("b");
-            System.out.println(contador.toString());
+            camisetas.delete(9);
+            System.out.println(camisetas);
         } catch (Exception e) {
             System.err.println("Ocurrió un error: " + e.getMessage());
         }
+
+        ContadorElementos<String> animales = new ContadorElementos<>();
+        try {
+            animales.count("gato");
+            animales.count("perro");
+            animales.count("gato");
+            animales.count("pato");
+            System.out.println(animales);
+
+            animales.discount("gato");
+            System.out.println(animales);
+
+            animales.delete("perro");
+            System.out.println(animales);
+        } catch (Exception e) {
+            System.err.println("Ocurrió un error: " + e.getMessage());
+        }
+
     }
 }
