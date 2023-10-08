@@ -1,7 +1,8 @@
 # Contador ELementos
 
-*Puede ver el codigo en la siguiente URL: [RepoContador](https://github.com/JamirGDC/Contador-Elementos.git)
-
+* Puede ver el codigo en la siguiente URL: [RepoContador](https://github.com/JamirGDC/Contador-Elementos.git)
+* todo el codigo tiene implementado el manejo de excepciones
+  
 ## Declaracion Variables
 
   Se Declara una lista elementos que almacenara los elementos y una lista repeticiones que almacenara las repeticiones de cada elemento
